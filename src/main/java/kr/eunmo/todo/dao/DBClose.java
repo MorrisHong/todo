@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class DBClose {
 
-	public void close(Connection conn, PreparedStatement ps, ResultSet rs) {
+	public static void close(Connection conn, PreparedStatement ps, ResultSet rs) {
 		if (rs != null) {
 			try {
 				rs.close();
@@ -31,7 +31,7 @@ public class DBClose {
 		}
 	}
 	
-	public void close(Connection conn, PreparedStatement ps) {
+	public static void close(Connection conn, PreparedStatement ps) {
 		if (ps != null) {
 			try {
 				ps.close();
