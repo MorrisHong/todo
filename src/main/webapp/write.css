@@ -1,0 +1,50 @@
+body{
+    background-color: #636e72;
+    color : #636e72;
+}
+
+h1{
+    text-align: center;
+}
+#wrap{
+    background-color: white;
+    
+    margin: 2% 30%;
+    padding:0 3em;
+    position: static;
+}
+#container{
+    margin : 0;
+}
+div{
+    margin: 1.5em;
+}
+
+.box-btn{
+    text-align: center;
+    width: 7em;
+    height: 2em;
+    border: black 1px solid;
+    margin-right: 1.3em;
+}
+
+.box-btn-container{
+    overflow: hidden;
+    padding-bottom: 5%;
+}
+
+
+.previous{
+    float: left;
+}
+.reg, .clear{
+    float : right;
+    background-color: #0984e3;
+    color : white;
+    border-style: none;
+}
+
+#reg-text{
+    width: 300px;
+}
+

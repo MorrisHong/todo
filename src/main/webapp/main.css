@@ -1,0 +1,65 @@
+
+/*전체를 감싸는 div */
+#wrap{
+    min-height:  50em;
+    margin: 50px;
+
+    border: 1px solid black;
+}
+
+header{
+    overflow: hidden;
+}
+/* 왼쪽 상단 나의 할 일 */
+h1{
+    position: absolute;
+    margin: 10px 0 0 80px;
+    transform: rotate(-30deg);
+}
+/* 새로운 todo리스트 등록버튼 */
+header > div{
+    float: right;
+    margin : 50px;
+    border: black solid 2px;
+    padding:20px;
+    text-align: center;
+}
+
+/* 본문 카드UI 시작. */
+#container{
+    text-align: right;
+    margin-left:100px;
+    margin-right: 50px;
+}
+
+.todo-container, .doing-container, .done-container{
+    margin : 0;
+    display: inline-block;
+    padding:0;
+    vertical-align: top;
+}
+
+.card{
+    position: relative;
+    text-align: left;
+    margin : 15px 0px 15px 30px;
+    width: 300px;
+    word-break:break-all;    
+    height: 100px;
+    border: 2px solid black;
+    font-style: italic;
+    font-size: .7em;
+    padding : 1.2em;
+}
+
+.card > p{
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+.card > button{
+    position: absolute;
+    right : 0;
+    bottom : 0;
+}
+
