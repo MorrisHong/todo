@@ -53,10 +53,10 @@ btnReg.addEventListener('click', function(){
                return false;
            }
 
-           oReq.open('post', './todo');
+           oReq.open('post', 'http://localhost:8080/todo/main');
            oReq.onreadystatechange = sendVal;
            oReq.setRequestHeader('Content-Type', 'application/x-www.form-urlencoded');
-           oReq.send(JSON.stringify(toDoObj));
+           oReq.send(toDoObj);
         }
 
         function sendVal(){
